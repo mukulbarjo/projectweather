@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER FORCASTING</title>
+    <link rel="stylesheet" href="weather.css">
+    <script src="https://kit.fontawesome.com/719478ffc5.js"
+      crossorigin="anonymous"></script>
+    <!-- <script src="weather.js"></script> -->
+    <style>
+      #div1{
+         width:28.33%;
+         float:right;
+         /* background-color: rgb(238, 252, 252); */
+         /* height:400px; */
+         
+      }
+      #div2{
+        width:28.33%;
+        float:left;
+        /* background-color: blue; */
+      }
+      #div3{
+        width:43.33%;
+        margin:0 auto;
+        /* background-color: aquamarine; */
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- -------------------------------NAVIGATION BAR--------------------------------  -->
+    <header>
+      <h1 class="logo">ऋतु
+      </h1>
+      <nav>
+        <ul class="links">
+          <li><a href="#">Weather</a></li>
+          <!-- <li><a href="#">News</a></li> -->
+          <li><a href="#">Maps</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <a class="button" href="#">
+        <button>Contact</button>
+      </a>
+    </header>
+    <!-- -------------------------------SEARCH BAR--------------------------------  -->
+    <div class="wrapper">
+      <div class="wsearch">
+        <form class="weather__search" method="post" >
+          <input type="text" placeholder="Search for a city." class="weather__searchform">
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+          <button type ="submit" i ="fa-solid fa-magnifying-glass"class="btn">get</button>   
+        </form>
+      </div>
+    </div>
+    <!-- -------------------------------RIGHT PANNEL BAR--------------------------------  -->
+    <div id="div1">
+      <div class="winfo">
+          <ib1>
+            <div class="wcard1">
+              <i class="fa-solid fa-temperature-full"></i>
+              <div>
+                <p>Real Feel</p>
+                <div class="wrealfeel">
+                  <p>18&#176</p>
+                </div>
+              </div>
+            </div>
+          </ib1>
+
+          <ib2>
+            <div class="wcard2">
+              <i class="fa-solid fa-droplet"></i>
+              <div>
+                <p>Humidity</p>
+                <p class="whumidity">18&#176</p>
+              </div>
+            </div>
+          </ib2>
+
+          <ib3>
+            <div class="wcard3">
+              <i class="fa-solid fa-wind"></i>
+              <div>
+                <p>Wind</p>
+                <p class="wwind">18&#176</p>
+              </div>
+            </div>
+          </ib3>
+
+          <ib4>
+            <div class="wcard4">
+              <i class="fa-solid fa-gauge-high"></i>
+              <div>
+                <p>Pressure</p>
+                <p class="wpressure">18&#176</p>
+              </div>
+            </div>
+          </ib4>
+        </div>
+    </div>
+    
+      <!-- -------------------------------LEFT PANNEL BAR--------------------------------  -->
+      <div id="div2"></div>
+
+      <!-- -------------------------------MIDDLE PANNEL BAR--------------------------------  -->
+      <div id="div3">
+        <div class="wbody">
+          <div class="wcity">
+            <!-- <h4>Bhubaneswar,India</h4> -->
+          </div>
+
+          <div class="wdaytime">
+            <!-- <p>Monday 12 April 2014 6.40 PM</p> -->
+          </div>
+
+          <div class="wforcast">
+            <!-- <p>Clear</p> -->
+          </div>
+
+          <div class="wicon">
+            <!-- <img src="http://openweathermap.org/img/wn/10d@4x.png" /> -->
+          </div>
+
+          <div>
+            <div class="wtemp">
+              <!-- <h4>20&#176</h4> -->
+            </div>
+          </div>
+
+          <div class="wminmax">
+             <!-- <p>Min : 12&#176 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>    -->
+            </div> 
+        
+          </div>
+        </div>
+      
+
+        <script src="weather.js"></script>
+      </body>
+    </html>

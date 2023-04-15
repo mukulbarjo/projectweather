@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=Fira+Sans:wght@500&family=Inter:wght@600&family=Merriweather:ital@1&family=Montserrat:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* entire page group */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+/* bagroound colour */
+
+body{
+    /* background-image:url('h8.jpeg'); */
+    background-color: rgb(48, 213, 200);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+/* changes the font of the text */
+li,a,button{
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration:none;
+    color:rgb(10, 10, 10);
+}
+/* separating the words */
+header{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:20px 10%;
+}
+/* moving the logo to the left  */
+.logo{
+    cursor: pointer;
+    margin-right:auto;
+}
+/* making the list in one line */
+.links li{
+
+    display:inline-block;
+    padding: 0px 20px;
+    }
+/* appling cursor transition */
+.links li a{
+    
+        transition: all 0.3s ease 0s;
+    }
+.links li a:hover{
+        border-bottom: 2px solid lightseagreen;
+        color:lightblue;
+    }
+
+
+    button{
+        padding: 5px 15px;
+        background-color: rgb(238, 242, 243);
+        border : none;
+        border-radius: 50px;
+        cursor : pointer;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+       }
+
+
+button:hover{
+
+        background-color:lightblue;
+}
+
+/* ------------ */
+
+.wrapper{
+    height : 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wsearch{
+    width:40%;
+    position: relative;
+}
+
+.wsearch input[type="text"]{
+    width :60%;
+    padding:10px;
+    padding-right: 60px;
+    border : 2px rgb(255, 0, 0);
+    /* border : 2px solid rgb(172, 243, 7); */
+    outline: none;
+    background: rgba(110, 109, 109, 0.3);
+    border-radius: 10px;
+    font-size: 14px;
+    border-radius: 13px;
+    opacity: 0.8;
+}
+.weather__search i {
+    position: end;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+    color: #f8f5f5;
+    cursor: pointer;
+}
+::placeholder {
+    color:rgb(5, 5, 5);
+    opacity: 2.8;
+}
+.fa-search{
+    position:relative;
+    top:20%;
+    right:40px;
+    color: rgb(10, 10, 10);
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: .8;
+}
+
+.btn{
+    align-items: center;
+    flex-direction: row ;
+    font-size: 15px;
+    
+}
+/* -----------------mid elements------------ */
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:2px 10%;
+    font-size: 19px;
+    gap: 100px;
+}
+
+
+.wbody{
+    text-align: center;
+    margin-left: auto;
+    margin-top: 1rem;;
+    
+}
+.wcity{
+    text-align: center;
+    font-size: 20px;
+}
+
+.wdaytime{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 20px;
+
+}
+
+.wforcast{
+    display: inline-block;
+    padding:5px;
+    font-size: 22px ;
+}
+
+.wicon img{
+    width:140px;
+    margin-bottom: none;
+}
+
+.wtemp{
+  font-size: 40px;
+}
+
+.wminmax{
+    margin-top: 20px;
+    font-size: 22px;
+    display: inline-flex;
+    justify-content: center;
+    
+}
+.wminmax p{
+    margin: 0.1rem;
+}
+
+
+/* -------------------right elements------------------------ */
+
+.winfo{
+    margin-top: 2rem;
+}
+.wcard1{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    border : 2px solid rgb(172, 243, 7);
+    background-color: rgba(154, 98, 177, 0.486);
+    
+    border-radius: 10px;
+    padding: 1.2rem;
+    width : 50% ;
+    font-size: 1.2rem;
+    
+}
+.wcard p{
+    font-size: 19px;
+}
+.wcard2{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    border : 2px solid rgb(172, 243, 7);
+    background-color: rgba(154, 98, 177, 0.486);
+    
+    border-radius: 10px;
+    padding: 1.2rem;
+    width : 50% ;
+    font-size: 1.2rem;
+    
+}
+.wcard p{
+    font-size: 19px;
+}
+.wcard3{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    border : 2px solid rgb(172, 243, 7);
+    background-color: rgba(154, 98, 177, 0.486);
+    
+    border-radius: 10px;
+    padding: 1.2rem;
+    width : 50% ;
+    font-size: 1.2rem;
+    
+}
+.wcard p{
+    font-size: 19px;
+}
+.wcard4{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    border : 2px solid rgb(172, 243, 7);
+    background-color: rgba(154, 98, 177, 0.486);
+    
+    border-radius: 10px;
+    padding: 1.2rem;
+    width : 50% ;
+    font-size: 1.2rem;
+    
+}
+.wcard p{
+    font-size: 19px;
+}
+
+/* ----------------External------------------------ */
+.winfo{
+   display: none;
+}
